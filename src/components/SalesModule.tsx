@@ -6,11 +6,11 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Plus, TrendingUp, DollarSign, Car, User, Calendar, CheckCircle } from "lucide-react";
 import { mockSales, mockVehicles, mockClients } from "@/data/mockData";
-import type { User } from "@/pages/Index";
+import type { User as UserType } from "@/pages/Index";
 import type { Sale } from "@/data/mockData";
 
 interface SalesModuleProps {
-  currentUser: User;
+  currentUser: UserType;
 }
 
 export const SalesModule = ({ currentUser }: SalesModuleProps) => {

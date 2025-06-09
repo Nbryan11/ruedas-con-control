@@ -7,11 +7,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Search, Plus, Phone, Mail, MapPin, User, Eye } from "lucide-react";
 import { mockClients } from "@/data/mockData";
-import type { User } from "@/pages/Index";
+import type { User as UserType } from "@/pages/Index";
 import type { Client } from "@/data/mockData";
 
 interface ClientManagementProps {
-  currentUser: User;
+  currentUser: UserType;
 }
 
 export const ClientManagement = ({ currentUser }: ClientManagementProps) => {

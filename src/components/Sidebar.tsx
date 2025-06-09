@@ -12,12 +12,12 @@ import {
   Bell
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import type { User } from "@/pages/Index";
+import type { User as UserType } from "@/pages/Index";
 
 interface SidebarProps {
   activeSection: string;
   setActiveSection: (section: string) => void;
-  currentUser: User;
+  currentUser: UserType;
 }
 
 export const Sidebar = ({ activeSection, setActiveSection, currentUser }: SidebarProps) => {
